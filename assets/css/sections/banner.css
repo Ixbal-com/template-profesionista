@@ -1,0 +1,47 @@
+/* Foto panorámica del despacho con una cita encima. */
+.banner {
+  position: relative;
+}
+
+.banner .media {
+  --media-ratio: 4 / 3;
+}
+
+@media (min-width: 48rem) {
+  .banner .media {
+    --media-ratio: 21 / 9;
+  }
+}
+
+.banner__quote {
+  max-width: 34rem;
+  margin: calc(var(--space-12) * -1) var(--space-4) 0;
+  position: relative;
+  padding: var(--space-8);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+@media (min-width: 48rem) {
+  .banner__quote {
+    position: absolute;
+    bottom: var(--space-8);
+    left: var(--space-8);
+    margin: 0;
+  }
+}
+
+.banner__text {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.banner__author {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-on-primary-muted);
+}

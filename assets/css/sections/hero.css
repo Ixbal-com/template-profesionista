@@ -1,0 +1,95 @@
+/* Fondo azul marino con retrato enmarcado en dorado. */
+.hero {
+  padding-block: var(--space-16) var(--space-section);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .hero__inner {
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: var(--space-16);
+  }
+}
+
+.hero__title {
+  font-size: var(--text-3xl);
+}
+
+.hero__title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.hero__lead {
+  max-width: 36rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-lg);
+  color: var(--color-on-primary-muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.hero__portrait {
+  position: relative;
+  width: calc(100% - var(--space-4));
+  max-width: 24rem;
+  margin-inline: auto;
+}
+
+.hero__portrait::before {
+  content: "";
+  position: absolute;
+  inset: var(--space-4) calc(var(--space-4) * -1) calc(var(--space-4) * -1) var(--space-4);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+}
+
+.hero__portrait .media {
+  position: relative;
+}
+
+.hero__signature {
+  margin-top: var(--space-8);
+  font-family: var(--font-display);
+  font-style: italic;
+  text-align: center;
+  color: var(--color-on-primary-muted);
+}
+
+/* Lo muestra main.js según el horario de la sección de contacto */
+.status-badge {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-on-primary-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+}
+
+.status-badge::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: var(--radius-full);
+  background: var(--color-danger);
+}
+
+.status-badge.is-open::before {
+  background: var(--color-whatsapp);
+}

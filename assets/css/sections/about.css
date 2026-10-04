@@ -1,0 +1,46 @@
+.split__content > p:not(.eyebrow) {
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding: var(--space-6) 0 0;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.stats__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+}
+
+.stats__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.education {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+}
+
+.education li {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.education time {
+  font-weight: 600;
+  color: var(--color-accent);
+}

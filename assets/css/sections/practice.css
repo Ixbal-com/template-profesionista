@@ -1,0 +1,63 @@
+/* Áreas de práctica numeradas en una retícula de 2 × 2. */
+.practice {
+  display: grid;
+  border-top: 1px solid var(--color-border);
+  counter-reset: area;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .practice {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .practice__item:nth-child(odd) {
+    border-right: 1px solid var(--color-border);
+    padding-right: var(--space-12);
+  }
+
+  .practice__item:nth-child(even) {
+    padding-left: var(--space-12);
+  }
+}
+
+.practice__item {
+  padding-block: var(--space-12);
+  border-bottom: 1px solid var(--color-border);
+  counter-increment: area;
+}
+
+.practice__item::before {
+  content: counter(area, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+}
+
+.practice__title {
+  margin-top: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.practice__text {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.practice__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  padding: 0;
+  list-style: none;
+}
+
+.practice__list li {
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}

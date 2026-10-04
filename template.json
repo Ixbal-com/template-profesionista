@@ -1,0 +1,201 @@
+{
+  "id": "profesionista",
+  "name": "Profesionista",
+  "version": "1.0.0",
+  "category": "servicios-profesionales",
+  "style": "Corporativo sobrio: azul marino y dorado, retícula formal; títulos en serif clásica (Libre Baskerville) y texto en IBM Plex Sans.",
+  "description": "Para abogadas, contadores, consultores, arquitectas y cualquier profesionista que vende confianza y atiende por cita.",
+  "tags": [
+    "profesionista",
+    "abogado",
+    "contador",
+    "consultor",
+    "credenciales",
+    "formulario",
+    "whatsapp"
+  ],
+  "entry": "index.html",
+  "preview": "preview.png",
+  "sections": [
+    "encabezado",
+    "hero",
+    "credenciales",
+    "areas",
+    "sobre-mi",
+    "despacho",
+    "proceso",
+    "opiniones",
+    "preguntas",
+    "contacto",
+    "pie"
+  ],
+  "imageSlots": [
+    {
+      "id": "hero",
+      "label": "Retrato profesional (de frente, fondo de oficina)",
+      "ratio": "4:5",
+      "recommended": "1200 × 1500 px",
+      "section": "hero"
+    },
+    {
+      "id": "sobre-mi",
+      "label": "Trabajando en el escritorio o revisando documentos",
+      "ratio": "4:3",
+      "recommended": "1600 × 1200 px",
+      "section": "sobre-mi"
+    },
+    {
+      "id": "despacho",
+      "label": "Oficina o sala de juntas (panorámica)",
+      "ratio": "21:9 en escritorio, 4:3 en móvil",
+      "recommended": "1600 × 1067 px",
+      "section": "despacho"
+    },
+    {
+      "id": "consulta",
+      "label": "Reunión con un cliente",
+      "ratio": "4:5",
+      "recommended": "1200 × 1500 px",
+      "section": "proceso"
+    }
+  ],
+  "fields": [
+    {
+      "id": "professionalName",
+      "label": "Nombre completo con título",
+      "type": "text",
+      "required": true,
+      "example": "Lic. Valeria Treviño Garza"
+    },
+    {
+      "id": "profession",
+      "label": "Profesión",
+      "type": "text",
+      "required": true,
+      "example": "Abogada familiar y corporativa"
+    },
+    {
+      "id": "tagline",
+      "label": "¿Qué problema resuelves?",
+      "type": "text",
+      "required": true,
+      "example": "Decisiones legales claras para tu familia y tu empresa"
+    },
+    {
+      "id": "description",
+      "label": "Describe tu práctica en una o dos frases",
+      "type": "textarea",
+      "required": true,
+      "example": "Más de 15 años acompañando a familias y empresas de Nuevo León."
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp para citas (con lada)",
+      "type": "phone",
+      "required": true,
+      "example": "+52 81 3579 2468"
+    },
+    {
+      "id": "phone",
+      "label": "Teléfono",
+      "type": "phone",
+      "required": false,
+      "example": "+52 81 3579 2468"
+    },
+    {
+      "id": "email",
+      "label": "Correo",
+      "type": "email",
+      "required": false,
+      "example": "contacto@valeriatrevino.mx"
+    },
+    {
+      "id": "address",
+      "label": "Dirección del despacho",
+      "type": "text",
+      "required": true,
+      "example": "Av. José Vasconcelos 1250 Ote., piso 8, San Pedro Garza García, N.L."
+    },
+    {
+      "id": "credentials",
+      "label": "Credenciales (cédula, estudios, certificaciones)",
+      "type": "list",
+      "required": true,
+      "max": 4
+    },
+    {
+      "id": "practiceAreas",
+      "label": "Áreas de práctica (nombre, descripción y servicios)",
+      "type": "list",
+      "required": true,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "id": "about",
+      "label": "Tu historia profesional",
+      "type": "textarea",
+      "required": false
+    },
+    {
+      "id": "stats",
+      "label": "Cifras (años, casos, resultados)",
+      "type": "list",
+      "required": false,
+      "max": 3
+    },
+    {
+      "id": "process",
+      "label": "Cómo trabajas (pasos)",
+      "type": "list",
+      "required": false,
+      "max": 4
+    },
+    {
+      "id": "consultationFee",
+      "label": "Costo de la primera consulta",
+      "type": "text",
+      "required": false,
+      "example": "$900 por 45 minutos"
+    },
+    {
+      "id": "hours",
+      "label": "Horario de atención",
+      "type": "hours",
+      "required": true
+    },
+    {
+      "id": "testimonials",
+      "label": "Opiniones de clientes",
+      "type": "list",
+      "required": false,
+      "max": 6
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes",
+      "type": "list",
+      "required": false,
+      "max": 8
+    },
+    {
+      "id": "brandColor",
+      "label": "Color principal",
+      "type": "color",
+      "required": false,
+      "example": "#1c2b45"
+    },
+    {
+      "id": "logo",
+      "label": "Logo o monograma",
+      "type": "image",
+      "required": false
+    },
+    {
+      "id": "social",
+      "label": "Redes sociales (LinkedIn, Facebook)",
+      "type": "links",
+      "required": false
+    }
+  ]
+}
