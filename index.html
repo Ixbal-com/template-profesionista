@@ -325,7 +325,8 @@
         </div>
 
         <!-- El formulario no usa servidor: arma el mensaje y lo abre en WhatsApp (assets/js/modules/whatsapp-form.js) -->
-        <form class="card contact-form form" data-whatsapp-form>
+        <!-- El texto del mensaje sale de data-message; {campo} se reemplaza por el valor de ese campo -->
+        <form class="card contact-form form" data-whatsapp-form data-message="Hola, soy {nombre}. Quiero agendar una consulta sobre: {tema}.&#10;{mensaje}">
           <h3 class="contact-form__title">Cuéntame tu caso</h3>
           <div class="form__field">
             <label class="form__label" for="nombre">Nombre</label>

@@ -73,7 +73,7 @@ scripts/check.mjs          Validador sin dependencias
 
 - **Agregar un área de práctica:** copia un `<li class="practice__item">` en `.practice` (el número se calcula solo) y agrega su `<option>` en el formulario.
 - **Otra profesión:** cambia textos, áreas y credenciales; en el JSON-LD usa el `@type` adecuado (`AccountingService`, `ProfessionalService`, `Physician`…).
-- **Formulario:** el mensaje de WhatsApp se arma con los campos `nombre`, `tema` y `mensaje` en `assets/js/modules/whatsapp-form.js`; si agregas un campo, inclúyelo también ahí.
+- **Formulario:** el mensaje de WhatsApp sale de `data-message` en el `<form>`; cada `{campo}` se reemplaza por el valor del campo con ese `name`. Si agregas un campo, inclúyelo en `data-message`.
 - **Quitar una sección:** borra el `<section>` completo y su enlace en `.site-nav__list`.
 - **Nueva sección:** crea el `<section class="section" id="…">`, su archivo en `assets/css/sections/`, impórtalo en `main.css` y agrega el enlace al menú.
 - **Cambiar fotos:** sigue los pasos de "Espacios de imagen".
