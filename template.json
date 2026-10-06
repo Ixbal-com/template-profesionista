@@ -2,7 +2,8 @@
   "id": "profesionista",
   "name": "Profesionista",
   "version": "1.0.0",
-  "category": "servicios-profesionales",
+  "category": "servicios",
+  "uses": ["citas"],
   "style": "Corporativo sobrio: azul marino y dorado, retícula formal; títulos en serif clásica (Libre Baskerville) y texto en IBM Plex Sans.",
   "description": "Para abogadas, contadores, consultores, arquitectas y cualquier profesionista que vende confianza y atiende por cita.",
   "tags": [
